@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Blog - Exploring Hidden Gems in Japan</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Exploring Hidden Gems in Japan</h1>
+        <div class="publication-info">
+            Published on <time datetime="2025-03-06">March 6, 2025</time> by Sarah Chen
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <p>
+                Japan is a country of contrasts, where ancient traditions meet cutting-edge technology. During my recent three-week journey through the Land of the Rising Sun, I discovered some remarkable places that aren't on the typical tourist itinerary. From secluded mountain temples to local food markets, these hidden gems provided an authentic glimpse into Japanese culture.
+            </p>
+
+            <details>
+                <summary>Quick Trip Overview</summary>
+                <p>
+                    My journey took me from Tokyo to Kyoto, then to the less-visited areas of Takayama, the Kii Peninsula, and finally to the art island of Naoshima. I spent 21 days exploring, using a mix of bullet trains, local buses, and occasionally renting bicycles to cover the more remote areas.
+                </p>
+            </details>
+
+            <h2>Photo Gallery: Japan's Hidden Corners</h2>
+            <div class="gallery" role="region" aria-label="Photo gallery">
+                <figure>
+                    <img src="img1.jpg" alt="Ancient cedar trees lining the path to Kumano Kodo shrine, with morning mist creating a mystical atmosphere" />
+                    <figcaption>Ancient cedar trees on the Kumano Kodo pilgrimage route</figcaption>
+                </figure>
+                <figure>
+                    <img src="img2.jpg" alt="Traditional wooden buildings in Takayama's old town with paper lanterns glowing at dusk" />
+                    <figcaption>Takayama's old town at dusk</figcaption>
+                </figure>
+                <figure>
+                    <img src="img3.jpg" alt="A small family-run noodle shop with steam rising from fresh udon being prepared" />
+                    <figcaption>Family-run udon shop in Marugame</figcaption>
+                </figure>
+            </div>
+
+            <h2>Travel Itinerary Breakdown</h2>
+            <table aria-label="Travel itinerary details">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Days Spent</th>
+                        <th>Highlight</th>
+                        <th>Accommodation Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tokyo</td>
+                        <td>4</td>
+                        <td>Yanaka traditional neighborhood</td>
+                        <td>Boutique hotel</td>
+                    </tr>
+                    <tr>
+                        <td>Kyoto</td>
+                        <td>5</td>
+                        <td>Fushimi Inari shrine at dawn</td>
+                        <td>Machiya (traditional house)</td>
+                    </tr>
+                    <tr>
+                        <td>Takayama</td>
+                        <td>3</td>
+                        <td>Morning markets</td>
+                        <td>Ryokan (traditional inn)</td>
+                    </tr>
+                    <tr>
+                        <td>Kii Peninsula</td>
+                        <td>6</td>
+                        <td>Kumano Kodo hiking trails</td>
+                        <td>Minshuku (family homestay)</td>
+                    </tr>
+                    <tr>
+                        <td>Naoshima</td>
+                        <td>3</td>
+                        <td>Benesse House Museum</td>
+                        <td>Art hotel</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="media-section">
+                <h2>Listen: Sounds of Japan</h2>
+                <p>This audio recording captures the peaceful atmosphere of a morning prayer session at a mountain temple in Koyasan:</p>
+                <div class="media-container">
+                    <audio controls aria-label="Audio recording of morning prayers at Koyasan temple">
+                        <source src="#" type="">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <h2>Watch: Local Cooking Lesson</h2>
+                <p>Join me for a traditional cooking class I took in Kyoto, where I learned to make perfect tempura from a third-generation chef:</p>
+                <div class="media-container">
+                    <video controls poster="" aria-label="Video of traditional tempura cooking lesson in Kyoto">
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+            </div>
+
+            <h2>Interactive Map: My Journey</h2>
+            <p>Click on the map below to explore the route I took through Japan:</p>
+            <canvas id="journeyMap" aria-label="Interactive map of Japan journey" role="img"></canvas>
+
+        </article>
+
+        <section class="comments-section">
+            <h2>Share Your Thoughts</h2>
+            <p>Have you visited any of these places? Do you have questions about planning your own trip? Leave a comment below!</p>
+            
+            <form class="comments-form" aria-label="Comments form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Your email (will not be published)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" required aria-required="true" placeholder="Share your experience or ask a question..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Notify me of follow-up comments</label>
+                </div>
+                
+                <button type="submit" aria-label="Submit comment">Post Comment</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Chronicles Blog. All rights reserved.</p>
+    </footer>
+</body>
+<style>
+    /* Base styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+
+    .publication-info {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    article {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+
+    /* Gallery styles */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 2rem 0;
+    }
+
+    figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    figure:hover {
+        transform: translateY(-5px);
+    }
+
+    figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    figcaption {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+    }
+
+    /* Media section styles */
+    .media-section {
+        margin: 2rem 0;
+    }
+
+    .media-container {
+        margin: 1.5rem 0;
+    }
+
+    audio, video {
+        width: 100%;
+        border-radius: 8px;
+        background-color: #f1f1f1;
+    }
+
+    /* Table styles */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f8f8f8;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* Comments section styles */
+    .comments-section {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eaeaea;
+    }
+
+    .comments-form {
+        background-color: #f8f8f8;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1rem;
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    /* Accessibility focus styles */
+    a:focus, button:focus, input:focus, textarea:focus {
+        outline: 3px solid #3498db;
+        outline-offset: 2px;
+    }
+
+    /* Details/Summary styles */
+    details {
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+    }
+
+    summary {
+        font-weight: 600;
+        cursor: pointer;
+        padding: 0.5rem 0;
+        color: #2c3e50;
+    }
+
+    summary:hover {
+        color: #3498db;
+    }
+
+    canvas {
+        width: 100%;
+        height: 200px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+        cursor: pointer;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+        
+        article {
+            padding: 1.5rem;
+        }
+    }
+</style>
+</html>
